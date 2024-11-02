@@ -43,5 +43,29 @@ module.exports = {
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-ignore": false,
+      },
+    ],
+    "unicorn/filename-case": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "no-nested-ternary": "off",
+    "@typescript-eslint/no-unnecessary-condition": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "interface",
+        format: ["PascalCase"],
+        custom: {
+          regex: "^[A-Z]",
+          match: true,
+        },
+      },
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
   },
 };

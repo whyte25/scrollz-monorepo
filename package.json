@@ -1,8 +1,16 @@
 {
+  "name": "scrollz",
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:admin": "turbo run dev --filter=admin",
+    "build:web": "turbo run build --filter=web",
+    "build:admin": "turbo run build --filter=admin",
+    "start:web": "turbo run start --filter=web",
+    "start:admin": "turbo run start --filter=admin",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
@@ -17,5 +25,8 @@
   "engines": {
     "node": ">=18"
   },
-  "name": "with-tailwind"
+  "dependencies": {
+    "lucide-react": "^0.454.0",
+    "zod": "^3.23.8"
+  }
 }
