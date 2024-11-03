@@ -16,7 +16,6 @@ The goal is to keep all frontend-related projects in one place, making developme
 
 ### Prerequisites
 
-- Node.js (latest LTS version recommended)
 - pnpm (our package manager of choice)
 
 ### Installation
@@ -27,14 +26,7 @@ The goal is to keep all frontend-related projects in one place, making developme
    npm install -g pnpm
    ```
 
-2. Clone the repository:
-
-   ```
-   git clone https://github.com/your-username/scrollz-monorepo.git
-   cd scrollz-monorepo
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
    ```
    pnpm install
    ```
@@ -68,6 +60,18 @@ pnpm run dev:admin  # For the admin dashboard
 ```
 
 ## Adding Dependencies
+
+To add package/dependency to the root:
+
+```
+pnpm add <package-name> -w
+```
+
+Example:
+
+```
+pnpm add react-icons -w
+```
 
 To add a package to a specific app:
 
@@ -105,6 +109,8 @@ Then run `pnpm install` to link the packages.
 
 If you encounter any issues:
 Clean and reinstall dependencies: `pnpm clean && pnpm install`,
-This might solve might fix the issue.
+This might fix the issue.
 
-Remember, we're all working together to build amazing product called Scrollz. Happy coding!
+Remember, we're all working together to build amazing product called Scrollz.
+
+Happy coding!
