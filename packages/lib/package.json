@@ -5,6 +5,9 @@
   "sideEffects": false,
   "main": "./index.ts",
   "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist"
