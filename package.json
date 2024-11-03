@@ -26,6 +26,7 @@
     "node": ">=18"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.11.1",
     "lucide-react": "^0.454.0",
     "zod": "^3.23.8"
   }
