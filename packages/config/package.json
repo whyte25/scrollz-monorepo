@@ -1,5 +1,5 @@
 {
-  "name": "@scrollz/lib",
+  "name": "@scrollz/config",
   "version": "0.1.0",
   "private": true,
   "sideEffects": false,
@@ -8,11 +8,9 @@
   "exports": {
     ".": "./index.ts"
   },
-  "dependencies": {
-    "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@scrollz/eslint-config": "workspace:*",
     "@scrollz/typescript-config": "workspace:*",
     "@types/node": "^20.11.30",
     "typescript": "^5.0.4"

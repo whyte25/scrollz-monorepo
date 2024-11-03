@@ -10,6 +10,7 @@
     "build:web": "turbo run build --filter=web",
     "build:admin": "turbo run build --filter=admin",
     "start:web": "turbo run start --filter=web",
+    "install:web": "pnpm add -c apps/web",
     "start:admin": "turbo run start --filter=admin",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
@@ -27,7 +28,11 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.11.1",
+    "@tanstack/react-query": "^5.59.18",
+    "@tanstack/react-query-devtools": "^5.59.18",
     "lucide-react": "^0.454.0",
-    "zod": "^3.23.8"
+    "sonner": "^1.5.0",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.1"
   }
 }

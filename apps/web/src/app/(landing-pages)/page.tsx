@@ -1,7 +1,7 @@
-import Albums from "@/features/landing/components/Albums";
-import Join from "@/features/landing/components/Join";
-import Studios from "@/features/landing/components/Studios";
-import Testimonials from "@/features/landing/components/Testimonials";
+import Albums from "@/features/landing-page/components/Albums";
+import Join from "@/features/landing-page/components/Join";
+import Studios from "@/features/landing-page/components/Studios";
+import Testimonials from "@/features/landing-page/components/Testimonials";
 import { Button } from "@scrollz/ui";
 import Image from "next/image";
 

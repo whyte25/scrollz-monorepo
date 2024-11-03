@@ -1,0 +1,23 @@
+{
+  "name": "@scrollz/provider",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": false,
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "exports": {
+    ".": "./index.tsx"
+  },
+  "dependencies": {
+    "@scrollz/ui": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@scrollz/eslint-config": "workspace:*",
+    "@scrollz/typescript-config": "workspace:*",
+    "@types/react": "^18.2.61",
+    "typescript": "5.5.4"
+  }
+}

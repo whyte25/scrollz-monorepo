@@ -1,4 +1,5 @@
-import { siteConfig } from "@/constants/site";
+import { siteConfig } from "@scrollz/config";
+import { AppProvider } from "@scrollz/provider";
 import "@scrollz/ui/styles.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
@@ -56,7 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={manrope.className}>
+        <AppProvider>{children}</AppProvider>
+      </body>
     </html>
   );
 }

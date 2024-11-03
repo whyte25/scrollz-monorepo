@@ -1,0 +1,10 @@
+{
+  "extends": "@scrollz/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["."]
+}

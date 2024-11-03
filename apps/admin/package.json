@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --port 3001",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@scrollz/ui": "workspace:*",
     "@scrollz/lib": "workspace:*",
+    "@scrollz/provider": "workspace:*",
+    "@scrollz/config": "workspace:*",
     "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
